@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
     <!-- <meta charset="UTF-8">
@@ -7,10 +7,13 @@
     <title>Document</title>
     <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  
   
   <link href="css/style.css" rel="Stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Ibarra+Real+Nova&display=swap" rel="stylesheet">
@@ -18,7 +21,8 @@
 
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Viblight Games</a>
+
+  <a class="navbar-brand" href="index.php"><img src="img/Logo.jpg" alt="Hi"> Viblight Games</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -29,7 +33,7 @@
         <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Games</a>
+        <a class="nav-link" href="Games.php">Games</a>
       </li>
 
       <li class="nav-item">
@@ -41,24 +45,14 @@
       </li>
 
       
-      <!-- <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li> -->
+    
       
       
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
   </div>
 </nav>
 
@@ -103,7 +97,7 @@
 
 <section class="my-5">
     <div class="py-5">
-        <h3 class="text-center ">About Us</h3>
+        <h3 class="text-center ">Most Recent</h3>
     </div>
     <div class="container-fluid">
         <div class="row">
@@ -115,7 +109,7 @@
                 <h2 class="display-4">Grand Theft Auto V</h2>
                 <p class="py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Molestias saepe eius provident nobis, laborum ullam rem minus fugiat officiis aliquam?</p>
-                    <a href="about.php" class="btn btn-success">Read More</a>
+                    <a href="about.php" class="btn btn-success">Download</a>
             </div>
         </div>
     </div>
@@ -124,7 +118,7 @@
 
 <section class="my-5">
     <div class="py-5">
-        <h3 class="text-center ">Our Services</h3>
+        <h3 class="text-center ">Latest Games</h3>
     </div>
     <div class="container-fluid">
         <div class="row">
@@ -134,7 +128,7 @@
                     <div class="card-body">
                         <h4 class="card-title">Honey</h4>
                         <p class="card-text">Some example text.</p>
-                        <a href="#" class="btn btn-primary">See Profile</a>
+                        <a href="#" class="btn btn-primary">Download</a>
                     </div>
                 </div>
             </div>
@@ -145,7 +139,7 @@
                     <div class="card-body">
                         <h4 class="card-title">Honey</h4>
                         <p class="card-text">Some example text.</p>
-                        <a href="#" class="btn btn-primary">See Profile</a>
+                        <a href="#" class="btn btn-primary">Download</a>
                     </div>
                 </div>
             </div>
@@ -156,7 +150,7 @@
                     <div class="card-body">
                         <h4 class="card-title">Honey</h4>
                         <p class="card-text">Some example text.</p>
-                        <a href="#" class="btn btn-primary">See Profile</a>
+                        <a href="#" class="btn btn-primary">Download</a>
                     </div>
                 </div>
             </div>
@@ -200,7 +194,7 @@
 
 <section class="my-5">
 <div class="py-5">
-        <h3 class="text-center ">Our Gallary</h3>
+        <h3 class="text-center ">Contact Us</h3>
     </div>
     <div class="w-50 m-auto">
         <form action="userinfo.php" method="post">
@@ -231,10 +225,11 @@
 
 <footer >
     <p class="p-3 bg-dark text-white text-center">
-        Copyright © 2020 All rights reserved | This site is made by ♥ Upendra Kumar</p>
-</footer>
-    
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+          Copyright © 2020 All rights reserved | This site is made by ♥ Upendra Kumar</p>
+  </footer>
+  
+      
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
