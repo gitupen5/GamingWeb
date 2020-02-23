@@ -13,102 +13,282 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
-  
-  
-  <link href="css/style.css" rel="Stylesheet" type="text/css" />
+    
+  <link href="../css/style.css" rel="Stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Ibarra+Real+Nova&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- delete this later if header didnt work properly -->
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Styles Start-->
+  <style>
+    body{
+       background-color:#242422;
+      
+    }
+  .fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.body{
+	font-family: 'Gothic A1', sans-serif;
+	font-size:16px;
+	}
+	p{
+	color:#6c6c6f;
+	font-size:1em;
+	}
+	h1,h2,h3,h4,h5,h6{color:#323233;text-transform:uppercase;}
+.navbar-brand  span{
+	color: #fed136;
+	font-size:25px;font-weight:700;letter-spacing:0.1em;
+    font-family: 'Kaushan Script','Helvetica Neue',Helvetica,Arial,cursive;
+}
+.navbar-brand {
+	color: #fff;
+	font-size:25px;
+    font-family: 'Kaushan Script','Helvetica Neue',Helvetica,Arial,cursive;
+	font-weight:700;
+	letter-spacing:0.1em;
+}
+
+.navbar-nav .nav-item .nav-link{
+	padding: 1.1em 1em!important;
+	font-size: 120%;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #fff;
+   font-family: 'Gothic A1', sans-serif;
+}
+.navbar-nav .nav-item .nav-link:hover{color:#fed136;}
+.navbar-expand-md .navbar-nav .dropdown-menu{
+	border-top:3px solid #fed136;
+}
+.dropdown-item:hover{background-color:#fed136;color:#fff;}
+nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
+    -moz-transition: padding-top .3s,padding-bottom .3s;
+    transition: padding-top .3s,padding-bottom .3s;
+    border: none;
+	}
+	
+ .shrink {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #212529;
+}
+.banner{
+	background-image:url('img/vgbackground.png');
+	text-align: center;
+    color: #fff;
+   
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.banner-text{
+	padding:200px 0 150px 0;
+}
+.banner-heading{
+	font-family: 'Lobster', cursive;
+	font-size: 75px;
+    font-weight: 700;
+    line-height: 100px;
+    margin-bottom: 30px;
+	color:#fff;
+}
+.banner-sub-heading{
+	font-family: 'Libre Baskerville', serif;
+	font-size: 30px;
+    font-weight: 300;
+    line-height: 30px;
+    margin-bottom: 50px;
+	color:#fff;
+}
+
+.btn-banner{
+	padding:5px 20px;
+	border-radius:10px;
+	font-weight:700;
+	line-height:1.5;
+	text-align:center;
+	color:#fff;
+	text-transform:uppercase;
+}
+.text-intro{
+	width:90%;
+	margin:auto;
+	text-align:center;
+	padding-top:30px;
+}
+
+
+/* mobile view */
+@media (max-width:500px)
+{
+	.navbar-nav{
+		background-color:#000;
+		border-top:3px solid #fed136;
+		color:#fff;
+		z-index:1;
+		margin-top:5px;
+		}
+	.navbar-nav .nav-item .nav-link{
+	padding: 0.7em 1em!important;
+	font-size: 100%;
+    font-weight: 500;
+    }
+	.banner-text{
+	padding:150px 0 150px 0;
+}
+.banner-heading{
+	font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.banner-sub-heading{
+	font-size: 10px;
+    font-weight: 200;
+    line-height: 10px;
+    margin-bottom: 40px;
+}
+
+}
+
+@media (max-width:768px){
+	.banner-text{
+	padding:150px 0 150px 0;
+}
+	.banner-sub-heading{
+	font-size: 23px;
+    font-weight: 200;
+    line-height: 23px;
+    margin-bottom: 40px;
+}
+}
+
+</style>
+
+<!-- Styles End -->
+
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-md navbar-dark fixed-top" id="banner">
+	<div class="container">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#"><span>Viblight</span> Games</a>
 
-  <a class="navbar-brand" href="index.php"><img src="img/Logo.jpg" alt="Hi"> Viblight Games</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+      <li class="nav-item">
+        <a class="nav-link" href="index.php">Home</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="Games.php">Games</a>
       </li>
-
-      <li class="nav-item">
-        <a class="nav-link" href="#">Downloads</a>
-      </li>
-
       <li class="nav-item">
         <a class="nav-link" href="about.php">Contacts</a>
-      </li>
-
-      
-    
-      
-      
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </li> 
+	   <!-- Dropdown -->
+    <!-- <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Dropdown link
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Link 1</a>
+        <a class="dropdown-item" href="#">Link 2</a>
+        <a class="dropdown-item" href="#">Link 3</a>
+      </div>
+    </li> -->
     </ul>
   </div>
+	</div>
 </nav>
 
-<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="img/ac3.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="img/AC2.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="img/gow1.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-      </div>
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+<!-- Banner Start -->
+<div class="banner">
+	<div class="container">
+	<div class="banner-text">
+	<div class="banner-heading">
+	Lets Play Beyond !
+	</div>
+	<div class="banner-sub-heading">
+	Welcome to the official home of Viblight Games 
+	</div>
+	<button type="button" class="btn btn-warning text-dark btn-banner" href="Games.php">Checkout our Games</button>
+	</div>
+	</div>
 </div>
+
+<section id="about">
+<div class="container ">
+	<div class="text-intro">
+	<h2 class= "py-4 text-secondary">About Us</h2>
+		<p>  Viblight Games is the indie game development startup which is currently being operated by Upendra Kumar and based in India that focuses on making games for platforms like mobile and pc. </p>
+	</div>
+</div>  
+</section>
+
+
+<!-- Section Most Recent Game -->
 
 <section class="my-5">
     <div class="py-5">
-        <h3 class="text-center ">Most Recent</h3>
+        <h3 class="text-center text-secondary">Most Recent</h3>
     </div>
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-12">
-                <img src="img/gtav2.jpg" class="img-fluid aboutimg" alt="">
+                <img src="img/theeve2.jpg" class="img-fluid aboutimg" alt="">
             </div>
 
-            <div class="col-lg-6 col-md-6 col-12">
-                <h2 class="display-4">Grand Theft Auto V</h2>
-                <p class="py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Molestias saepe eius provident nobis, laborum ullam rem minus fugiat officiis aliquam?</p>
+            <div class="col-lg-6 col-md-6 col-12 ">
+                <h2 class="display-4 text-danger" >The Eve</h2>
+                <p class="py-3">2D platformer game.</p>
                     <a href="about.php" class="btn btn-success">Download</a>
             </div>
         </div>
@@ -116,18 +296,19 @@
 
 </section>
 
+<!-- Section Latest Games -->
 <section class="my-5">
     <div class="py-5">
-        <h3 class="text-center ">Latest Games</h3>
+        <h3 class="text-center text-secondary ">Latest Games</h3>
     </div>
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-lg-4 col-mg-4 col-12 ">
             <div class="card" >
-                <img class="card-img-top" src="img/honey.jpg" alt="Card image">
+                <img class="card-img-top" src="img/crityball.png" alt="Card image">
                     <div class="card-body">
-                        <h4 class="card-title">Honey</h4>
-                        <p class="card-text">Some example text.</p>
+                        <h4 class="card-title">Crity Ball</h4>
+                        <p class="card-text">Avoid Obstacles.</p>
                         <a href="#" class="btn btn-primary">Download</a>
                     </div>
                 </div>
@@ -135,10 +316,10 @@
 
             <div class="col-lg-4 col-mg-4 col-12 ">
             <div class="card" >
-                <img class="card-img-top" src="img/honey.jpg" alt="Card image">
+                <img class="card-img-top" src="img/stickman.png" alt="Card image">
                     <div class="card-body">
-                        <h4 class="card-title">Honey</h4>
-                        <p class="card-text">Some example text.</p>
+                        <h4 class="card-title ">Stickman</h4>
+                        <p class="card-text">Kill your Enemies.</p>
                         <a href="#" class="btn btn-primary">Download</a>
                     </div>
                 </div>
@@ -146,10 +327,10 @@
 
             <div class="col-lg-4 col-mg-4 col-12 ">
             <div class="card" >
-                <img class="card-img-top" src="img/honey.jpg" alt="Card image">
+                <img class="card-img-top" src="img/stickman2.jpg" alt="Card image">
                     <div class="card-body">
-                        <h4 class="card-title">Honey</h4>
-                        <p class="card-text">Some example text.</p>
+                        <h4 class="card-title">Stickman 2</h4>
+                        <p class="card-text">Play around the arena with grampling hook.</p>
                         <a href="#" class="btn btn-primary">Download</a>
                     </div>
                 </div>
@@ -159,42 +340,14 @@
     </div>
 </section>
 
-<section class="my-5">
-<div class="py-5">
-        <h3 class="text-center ">Our Gallary</h3>
-    </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-4 col-mg-4 col-12 ">
-                <img src="img/gta3.jpg" class = "img-fluid pb-4">
-            </div>
 
-            <div class="col-lg-4 col-mg-4 col-12 ">
-                <img src="img/gta4.jpg" class = "img-fluid pb-4">
-            </div>
-
-            <div class="col-lg-4 col-mg-4 col-12 ">
-                <img src="img/gta5.jpg" class = "img-fluid pb-4">
-            </div>
-
-            <div class="col-lg-4 col-mg-4 col-12 ">
-                <img src="img/gta6.jpg" class = "img-fluid pb-4">
-            </div>
-
-            <div class="col-lg-4 col-mg-4 col-12 ">
-                <img src="img/gta7.jpg" class = "img-fluid pb-4">
-            </div>
-
-            <div class="col-lg-4 col-mg-4 col-12 ">
-                <img src="img/gtav2.jpg" class = "img-fluid pb-4">
-            </div>
-        </div>
-    </div>
+</div>
 </section>
 
-<section class="my-5">
+<!-- Section Contact Us -->
+<section class="my-5 text-light">
 <div class="py-5">
-        <h3 class="text-center ">Contact Us</h3>
+        <h3 class="text-center text-secondary">Contact Us</h3>
     </div>
     <div class="w-50 m-auto">
         <form action="userinfo.php" method="post">
@@ -223,15 +376,44 @@
 
 </section>
 
-<footer >
-    <p class="p-3 bg-dark text-white text-center">
-          Copyright © 2020 All rights reserved | This site is made by ♥ Upendra Kumar</p>
-  </footer>
+<!-- Section Social media -->
+<section class= "text-center py-3 bg-danger">
+                    <a href="#" class="fa fa-facebook"></a> 
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                    
+</section> 
+
+<!-- Footer -->
+  <footer class="w-100 position-relative bg-dark text-light">
+	<div class="container p-4">
+		<div class="row">
+			<div class="mb-4 mb-md-0 col-md-6 text-center text-md-left">
+				<h3 class="text-secondary">Viblight Games, LLC.</h3>
+				<p><a href="https://www.playstation.com/network/legal/privacy-policy/" target="_blank">Privacy Policy</a> | <a href="https://www.playstation.com/en-us/legal/terms-of-use/" target="_blank">Terms of Use</a></p>
+				
+				<p >&copy; 2020 Viblight Games LLC.</p>
+			</div>
+			<div class="d-flex justify-content-center justify-content-md-end align-items-center col-md-6">
+				<a class="d-block mr-4" href="http://www.esrb.org/confirm/scea-confirmation.jsp" target="_blank">
+					<img class="ib" src="https://s3.amazonaws.com/nd.images/uploads/esrb_privacy_policy_small.png">
+				</a>
+				<a class="d-block rating position-relative" href="http://www.esrb.org/" target="_blank">
+					<img class="position-absolute object-fit w-100" src="https://s3.amazonaws.com/nd.images/uploads/esrb_rp_m.png">
+				</a>
+			</div>
+		</div>
+	</div>
+</footer>
   
-      
+      <!-- Scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </body>
 </html>
