@@ -14,15 +14,10 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
-
-      <link href="../css/style.css" rel="Stylesheet" type="text/css" />
       <link href="https://fonts.googleapis.com/css?family=Ibarra+Real+Nova&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-      <!-- delete this later if header didnt work properly -->
-      <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-      <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 
       <!-- Styles Start-->
       <style>
@@ -248,12 +243,14 @@
       <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="banner">
           <div class="container">
               <!-- Brand -->
-              <a class="navbar-brand" href="#"><span>Viblight</span> Games</a>
+              <a class="navbar-brand d-block mr-4 ib" href="#"> <img style="width: 100px; height: 100px;"
+                      src="img/Logo.png"> <span>Viblight</span> Games</a>
+
 
               <!-- Toggler/collapsibe Button -->
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
+              <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button> -->
 
               <!-- Navbar links -->
               <div class="collapse navbar-collapse" id="collapsibleNavbar">
@@ -293,8 +290,9 @@
                   <div class="banner-sub-heading">
                       Welcome to the official home of Viblight Games
                   </div>
-                  <button type="button" class="btn btn-warning text-dark btn-banner" href="Games.php">Checkout our
-                      Games</button>
+                  <!-- <button type="button" class="btn btn-warning text-dark btn-banner" href="Games.html">Checkout our
+                      Games</button> -->
+                  <a href="Games.html" class="btn btn-outline-danger">Checkout our Games</a>
               </div>
           </div>
       </div>
@@ -337,22 +335,26 @@
           <div class="py-5">
               <h3 class="text-center text-secondary ">Latest Games</h3>
           </div>
-          <div class="container">
+          <div class="container p-auto">
               <div class="row">
-                  <div class="col-lg-4 col-mg-4 col-12 ">
+                  <div class="col-lg-4 col-md-4 col-12 ">
                       <div class="card">
-                          <img class="card-img-top" src="img/crityball.png" alt="Card image">
+                          <div class="card-body">
+
+                              <img class="card-img-top" src="img/crityball.png" alt="Card image"></div>
                           <div class="card-body">
                               <h4 class="card-title">Crity Ball</h4>
-                              <p class="card-text">Avoid Obstacles.</p>
+                              <p class="card-text">Avoid your of Obstacles.</p>
+
                               <a href="#" class="btn btn-primary">Download</a>
                           </div>
                       </div>
                   </div>
 
-                  <div class="col-lg-4 col-mg-4 col-12 ">
+                  <div class="col-lg-4 col-md-4 col-12 ">
                       <div class="card">
-                          <img class="card-img-top" src="img/stickman.png" alt="Card image">
+                          <div class="card-body">
+                              <img class="card-img-top" src="img/stickman.png" alt="Card image"></div>
                           <div class="card-body">
                               <h4 class="card-title ">Stickman</h4>
                               <p class="card-text">Kill your Enemies.</p>
@@ -361,12 +363,15 @@
                       </div>
                   </div>
 
-                  <div class="col-lg-4 col-mg-4 col-12 ">
+
+                  <div class="col-lg-4 col-md-4 col-12 ">
                       <div class="card">
-                          <img class="card-img-top" src="img/stickman2.jpg" alt="Card image">
+                          <div class="card-body">
+
+                              <img class="card-img-top" src="img/stickman2.jpg" alt="Card image"></div>
                           <div class="card-body">
                               <h4 class="card-title">Stickman 2</h4>
-                              <p class="card-text">Play around the arena with grampling hook.</p>
+                              <p class="card-text">Play around the arena with grampling.</p>
                               <a href="#" class="btn btn-primary">Download</a>
                           </div>
                       </div>
@@ -414,10 +419,10 @@
 
       <!-- Section Social media -->
       <section class="text-center py-3 bg-danger">
-          <a href="https://www.facebook.com/viblightgames" class="fa fa-facebook"></a>
-          <a href="https://twitter.com/viblightgames" class="fa fa-twitter"></a>
-          <a href="https://www.instagram.com/viblightgames/" class="fa fa-instagram"></a>
-          <a href="https://www.youtube.com/channel/UCQ31vxYMBXGD_YA1bk1oY0Q" class="fa fa-youtube"></a>
+          <a href="https://www.facebook.com/viblightgames" target="_blank" class="fa fa-facebook"></a>
+          <a href="https://twitter.com/viblightgames" target="_blank" class="fa fa-twitter"></a>
+          <a href="https://www.instagram.com/viblightgames/" target="_blank" class="fa fa-instagram"></a>
+          <a href="https://www.youtube.com/channel/UCQ31vxYMBXGD_YA1bk1oY0Q" target="_blank" class="fa fa-youtube"></a>
 
       </section>
 
@@ -434,9 +439,8 @@
                       <p>&copy; 2020 Viblight Games LLC.</p>
                   </div>
                   <div class="d-flex justify-content-center justify-content-md-end align-items-center col-md-6">
-                      <a class="d-block mr-4" href="http://www.esrb.org/confirm/scea-confirmation.jsp" target="_blank">
-                          <img class="ib"
-                              src="https://s3.amazonaws.com/nd.images/uploads/esrb_privacy_policy_small.png">
+                      <a class="d-block mr-4" href="index.html" target="_blank">
+                          <img class="ib" style="width: 150px; height: 150px;" src="img/vblogo.png">
                       </a>
                       <a class="d-block rating position-relative" href="http://www.esrb.org/" target="_blank">
                           <img class="position-absolute object-fit w-100"
